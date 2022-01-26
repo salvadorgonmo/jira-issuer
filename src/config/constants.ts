@@ -1,0 +1,1 @@
+export const Expedia_Jira_API_Base = 'https://jira.expedia.biz/rest'
