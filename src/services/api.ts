@@ -9,7 +9,9 @@ const axiosCall = async (method, url, options: AxiosOptions) => {
       data: options.data,
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'https://jira-issuer.herokuapp.com/',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
         ...options.headers
       },
       params: options.params
